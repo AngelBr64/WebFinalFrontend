@@ -1,0 +1,107 @@
+.dashboard-container {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .logout-button:hover {
+    background-color: #d9363e;
+  }
+  
+  .ant-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+    width: 100%;  /* Asegura que las tarjetas ocupen todo el espacio disponible */
+    max-width: 600px; /* Limita el ancho máximo para que no se extienda demasiado */
+  }
+  
+  .ant-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ant-card-meta-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .ant-card-meta-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+  }
+  
+  .ant-card-body {
+    padding: 16px;
+    background-color: #fff;
+  }
+  
+  .ant-card-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+  
+  .ant-btn {
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 14px;
+    color: #007bff;
+    background-color: transparent;
+    border: 1px solid #007bff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .ant-btn:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .audio-player {
+    margin-top: 16px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .upload-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .posts-container {
+    max-height: 80vh; /* Controla el tamaño visible del contenedor */
+    overflow-y: auto;  /* Habilita el desplazamiento vertical */
+    padding-right: 10px; /* Evita que el contenido quede tocando la barra de desplazamiento */
+  }
+  
+  

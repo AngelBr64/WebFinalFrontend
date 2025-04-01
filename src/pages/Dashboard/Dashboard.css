@@ -1,0 +1,218 @@
+.dashboard-container {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.logout-button:hover {
+  background-color: #d9363e;
+}
+
+.ant-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  width: 100%;  /* Asegura que las tarjetas ocupen todo el espacio disponible */
+  max-width: 600px; /* Limita el ancho máximo para que no se extienda demasiado */
+}
+
+.ant-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ant-card-meta-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.ant-card-meta-description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.ant-card-body {
+  padding: 16px;
+  background-color: #fff;
+}
+
+.ant-card-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.ant-btn {
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 14px;
+  color: #007bff;
+  background-color: transparent;
+  border: 1px solid #007bff;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.ant-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.audio-player {
+  margin-top: 16px;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.upload-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+}
+
+.posts-container {
+  max-height: 80vh; /* Controla el tamaño visible del contenedor */
+  overflow-y: auto;  /* Habilita el desplazamiento vertical */
+  padding-right: 10px; /* Evita que el contenido quede tocando la barra de desplazamiento */
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.floating-button button {
+  border-radius: 50px;
+  padding: 12px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Agregar al final del archivo Dashboard.css */
+
+/* Estilos para los comentarios */
+.comment-list {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.comment-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.comment-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.comment-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.comment-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.comment-item {
+  display: flex;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-username {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.comment-time {
+  color: #888;
+  font-size: 12px;
+  margin-left: 8px;
+  font-weight: normal;
+}
+
+/* Estilos para el botón de like activo */
+.ant-btn-primary.liked {
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.ant-btn-primary.liked:hover {
+  background-color: #ff7875;
+  border-color: #ff7875;
+}
+
+/* Notifications styles */
+.ant-dropdown-menu-item {
+  padding: 12px 16px !important;
+}
+
+.notification-item {
+  transition: background-color 0.3s;
+}
+
+.notification-item:hover {
+  background-color: #f5f5f5 !important;
+}
+
+.ant-badge-count {
+  box-shadow: none !important;
+}
+
+/* SSE connection indicator */
+.sse-indicator {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  z-index: 1000;
+}
