@@ -880,11 +880,6 @@ const Dashboard = () => {
               renderItem={comment => (
                 <CustomComment
                   author={comment.username}
-                  avatar={comment.avatarUrl || (
-                    <Avatar>
-                      {comment.username ? comment.username.charAt(0).toUpperCase() : 'A'}
-                    </Avatar>
-                  )}
                   content={<p>{comment.text}</p>}
                   datetime={new Date(comment.createdAt).toLocaleString()}
                 />
