@@ -33,7 +33,7 @@ const Login = ({ onLogin }) => {
     setIsLoading(true);
     
     try {
-      const response = await fetch('http://localhost:5000/login', {
+      const response = await fetch('https://webfinalbackend-production-c682.up.railway.app:5000/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

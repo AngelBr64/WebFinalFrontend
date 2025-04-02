@@ -16,7 +16,7 @@ const ContactPage = () => {
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/api/contact', values, {
+      const response = await axios.post('https://webfinalbackend-production-c682.up.railway.app:5000/api/contact', values, {
         headers: {
           'Content-Type': 'application/json'
         }
